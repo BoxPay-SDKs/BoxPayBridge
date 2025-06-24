@@ -6,7 +6,9 @@ plugins {
 }
 
 kotlin {
-    androidTarget()
+    androidTarget {
+        publishAllLibraryVariants()
+    }
     iosX64()
     iosArm64()
     iosSimulatorArm64()
@@ -40,10 +42,6 @@ kotlin {
         val iosSimulatorArm64Main by getting {
             dependsOn(iosMain)
         }
-    }
-
-    androidTarget {
-        publishAllLibraryVariants()
     }
 }
 
