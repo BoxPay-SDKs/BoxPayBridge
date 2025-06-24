@@ -6,6 +6,7 @@ plugins {
 }
 
 kotlin {
+    jvmToolchain(17)
     androidTarget {
         publishAllLibraryVariants() // 👈 This is the key to generate the AAR
     }
@@ -50,6 +51,11 @@ android {
     compileSdk = 34
     defaultConfig {
         minSdk = 21
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
