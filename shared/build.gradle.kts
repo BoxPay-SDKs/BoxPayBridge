@@ -41,6 +41,10 @@ kotlin {
             dependsOn(iosMain)
         }
     }
+
+    androidTarget {
+        publishAllLibraryVariants()
+    }
 }
 
 android {
@@ -58,7 +62,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.BoxPay-SDKs"
                 artifactId = "BoxPayBridge"
-                version = "1.0.0-beta4"
+                version = "1.0.0-beta5"
                 from(components.findByName("release"))
             }
         }
