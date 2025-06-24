@@ -6,7 +6,7 @@ plugins {
 }
 
 kotlin {
-    android()
+    androidTarget()
     iosX64()
     iosArm64()
     iosSimulatorArm64()
@@ -50,12 +50,17 @@ android {
         minSdk = 21
     }
 }
-publishing {
-    publications {
-        withType<MavenPublication>().configureEach {
-            groupId = "com.boxpaybridge"
-            artifactId = "shared"
-            version = "1.0.0"
+
+// ✅ Publishing block
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                groupId = "com.github.BoxPay-SDKs"
+                artifactId = "BoxPayBridge"
+                version = "1.0.0-beta4"
+                from(components.findByName("release"))
+            }
         }
     }
 }
