@@ -53,8 +53,8 @@ android {
 publishing {
     publications {
         withType<MavenPublication>().configureEach {
-            groupId = "com.boxpay"
-            artifactId = "bridge"
+            groupId = "com.boxpaybridge"
+            artifactId = "shared"
             version = "1.0.0"
         }
     }
