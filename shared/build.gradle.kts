@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
+
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
@@ -8,11 +10,29 @@ plugins {
 kotlin {
     jvmToolchain(17)
     androidTarget {
-        publishAllLibraryVariants() // 👈 This is the key to generate the AAR
+        publishAllLibraryVariants()
     }
-    iosX64()
-    iosArm64()
-    iosSimulatorArm64()
+
+    val xcf = XCFramework() // ✅ Create XCFramework
+
+    iosX64 {
+        binaries.framework {
+            baseName = "shared"
+            xcf.add(this)
+        }
+    }
+    iosArm64 {
+        binaries.framework {
+            baseName = "shared"
+            xcf.add(this)
+        }
+    }
+    iosSimulatorArm64 {
+        binaries.framework {
+            baseName = "shared"
+            xcf.add(this)
+        }
+    }
 
     cocoapods {
         version = "1.0.0"
@@ -20,7 +40,8 @@ kotlin {
         homepage = "https://boxpay.com"
         ios.deploymentTarget = "14.1"
         framework {
-            baseName = "BoxPayBridge"
+            baseName = "shared"
+            isStatic = true
         }
     }
 
@@ -62,11 +83,6 @@ android {
 // ✅ Publishing block
 
 afterEvaluate {
-    println("🔍 Available components:")
-    components.forEach { component ->
-        println("👉 Component name: ${component.name}")
-    }
-
     publishing {
         publications {
             create<MavenPublication>("release") {
@@ -76,13 +92,9 @@ afterEvaluate {
 
                 val androidComponent = components.findByName("release")
                 if (androidComponent != null) {
-                    println("✅ Using component: ${androidComponent.name}")
                     from(androidComponent)
-                } else {
-                    println("❌ No suitable component found for publishing!")
                 }
             }
         }
     }
 }
-

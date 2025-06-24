@@ -1,0 +1,8 @@
+framework module "BoxPayBridge" {
+    umbrella header "BoxPayBridge.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
