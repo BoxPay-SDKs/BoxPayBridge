@@ -7,7 +7,7 @@ plugins {
 
 kotlin {
     androidTarget {
-        publishAllLibraryVariants()
+        publishAllLibraryVariants() // 👈 This is the key to generate the AAR
     }
     iosX64()
     iosArm64()
@@ -54,15 +54,29 @@ android {
 }
 
 // ✅ Publishing block
+
 afterEvaluate {
+    println("🔍 Available components:")
+    components.forEach { component ->
+        println("👉 Component name: ${component.name}")
+    }
+
     publishing {
         publications {
             create<MavenPublication>("release") {
                 groupId = "com.github.BoxPay-SDKs"
                 artifactId = "BoxPayBridge"
                 version = "1.0.0-beta5"
-                from(components.findByName("release"))
+
+                val androidComponent = components.findByName("release")
+                if (androidComponent != null) {
+                    println("✅ Using component: ${androidComponent.name}")
+                    from(androidComponent)
+                } else {
+                    println("❌ No suitable component found for publishing!")
+                }
             }
         }
     }
 }
+
