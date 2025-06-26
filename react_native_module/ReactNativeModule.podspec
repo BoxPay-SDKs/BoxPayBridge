@@ -10,12 +10,15 @@ Pod::Spec.new do |s|
   s.license      = package["license"]
   s.authors      = package["author"]
 
-  s.platforms    = { :ios => min_ios_version_supported }
+  s.platform     = :ios, "14.0"
   s.source       = { :git => "https://github.com/Ishika1601-boxpay/react_native_module.git", :tag => "#{s.version}" }
 
-  s.source_files = "ios/**/*.{h,m,mm,cpp}"
+  s.vendored_frameworks = "ios/shared.xcframework"
+  s.source_files = "ios/**/*.{h,m,mm,swift}"
   s.private_header_files = "ios/**/*.h"
 
-
-  install_modules_dependencies(s)
+  s.requires_arc = true
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+  }
 end

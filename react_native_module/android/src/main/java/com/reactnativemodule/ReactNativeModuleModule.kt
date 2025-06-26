@@ -1,23 +1,27 @@
 package com.reactnativemodule
 
 import com.facebook.react.bridge.ReactApplicationContext
-import com.facebook.react.module.annotations.ReactModule
+import com.facebook.react.bridge.ReactContextBaseJavaModule
+import com.facebook.react.bridge.ReactMethod
+import com.facebook.react.bridge.Promise
+import com.boxpaybridge.shared.Greeting // 👈 Import your KMM class
 
-@ReactModule(name = ReactNativeModuleModule.NAME)
 class ReactNativeModuleModule(reactContext: ReactApplicationContext) :
-  NativeReactNativeModuleSpec(reactContext) {
-
-  override fun getName(): String {
-    return NAME
-  }
-
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
-  override fun multiply(a: Double, b: Double): Double {
-    return a * b
-  }
+  ReactContextBaseJavaModule(reactContext) {
 
   companion object {
-    const val NAME = "ReactNativeModule"
+    const val NAME = "BoxPayBridge"
+  }
+
+  override fun getName(): String = NAME
+
+  @ReactMethod
+  fun greet(promise: Promise) {
+    try {
+      val greeting = Greeting().greet() // 👈 From your shared KMM class
+      promise.resolve(greeting)
+    } catch (e: Exception) {
+      promise.reject("GREETING_ERROR", e.message, e)
+    }
   }
 }
