@@ -5,6 +5,15 @@ plugins {
     alias(libs.plugins.kotlin.compose) apply false
 }
 
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+
 tasks.register<Copy>("copyXCFrameworkToReactNativeModule") {
     dependsOn(":shared:assembleSharedReleaseXCFramework")
 
@@ -30,6 +39,9 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
+        maven { url = uri("https://jitpack.io") }
     }
 }
+
 

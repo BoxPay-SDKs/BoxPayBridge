@@ -1,0 +1,9 @@
+com.boxpaybridge.shared-pngs-0 /Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/build/generated/res/pngs/release
+com.boxpaybridge.shared-resValues-1 /Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/build/generated/res/resValues/release
+com.boxpaybridge.shared-mergeReleaseResources-2 /Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.boxpaybridge.shared-mergeReleaseResources-3 /Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.boxpaybridge.shared-release-4 /Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/build/intermediates/merged_res/release/mergeReleaseResources
+com.boxpaybridge.shared-androidMain-5 /Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/src/androidMain/res
+com.boxpaybridge.shared-androidRelease-6 /Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/src/androidRelease/res
+com.boxpaybridge.shared-main-7 /Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/src/main/res
+com.boxpaybridge.shared-release-8 /Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/src/release/res
