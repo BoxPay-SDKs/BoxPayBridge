@@ -1,0 +1,3 @@
+rootProject.name = 'react_native_module'
+include ':shared'
+project(':shared').projectDir = new File(rootDir, '../../shared')

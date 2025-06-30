@@ -25,3 +25,11 @@ tasks.register<Copy>("copyXCFrameworkToReactNativeModule") {
         println("📦 Replacing old shared.xcframework in react_native_module/ios/")
     }
 }
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
