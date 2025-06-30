@@ -48,7 +48,7 @@ android {
     }
 
     dependencies {
-        implementation files('../../shared/build/outputs/aar/shared-release.aar')
+        implementation project(":shared")
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
     }
