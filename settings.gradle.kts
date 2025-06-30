@@ -3,16 +3,31 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven {
+            url = uri("https://jitpack.io")
+            credentials {
+                username = providers.gradleProperty("jitpack.username").get()
+                password = providers.gradleProperty("jitpack.token").get()
+            }
+        }
     }
 }
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS) // ✅ this is more flexible
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://jitpack.io")
+            credentials {
+                username = providers.gradleProperty("jitpack.username").get()
+                password = providers.gradleProperty("jitpack.token").get()
+            }
+        }
     }
 }
+
 
 rootProject.name = "boxpaybridge"
 
