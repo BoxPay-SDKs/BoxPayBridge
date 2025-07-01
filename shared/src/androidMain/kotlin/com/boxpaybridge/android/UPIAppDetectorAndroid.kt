@@ -4,23 +4,25 @@ import android.content.Context
 import android.content.pm.PackageManager
 import com.boxpaybridge.shared.UPIAppDetector
 
-class UPIAppDetectorAndroid(private val context: Context) : UPIAppDetector {
+class UPIAppDetectorAndroid(
+    private val context: Context
+) : UPIAppDetector {
 
-    private val upiPackages = listOf(
-        "com.google.android.apps.nbu.paisa.user", // GPay
-        "net.one97.paytm",                        // Paytm
-        "com.phonepe.app"                         // PhonePe
+    private val upiPackages: Map<String, String> = mapOf(
+        "gpay" to "com.google.android.apps.nbu.paisa.user",
+        "paytm" to "net.one97.paytm",
+        "phonepe" to "com.phonepe.app"
     )
 
     override fun getInstalledUPIApps(): List<String> {
         val pm = context.packageManager
-        return upiPackages.filter { pkg ->
+        return upiPackages.filter { (_, packageName) ->
             try {
-                pm.getPackageInfo(pkg, PackageManager.GET_ACTIVITIES)
+                pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES)
                 true
             } catch (e: PackageManager.NameNotFoundException) {
                 false
             }
-        }
+        }.keys.toList()
     }
 }

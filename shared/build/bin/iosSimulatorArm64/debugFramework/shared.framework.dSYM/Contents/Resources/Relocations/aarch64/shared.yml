@@ -2,34 +2,34 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/build/bin/iosSimulatorArm64/debugFramework/shared.framework/shared'
 relocations:
-  - { offset: 0x3A, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService#<init>(com.boxpaybridge.shared.UPIAppDetector){}', symObjAddr: 0x0, symBinAddr: 0x2374, symSize: 0x74 }
-  - { offset: 0x42, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService.<get-detector>#internal', symObjAddr: 0x74, symBinAddr: 0x23E8, symSize: 0x78 }
-  - { offset: 0x7D, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService.<get-detector>#internal', symObjAddr: 0x74, symBinAddr: 0x23E8, symSize: 0x78 }
-  - { offset: 0x85, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService#getAvailableApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0xEC, symBinAddr: 0x2460, symSize: 0xDC }
-  - { offset: 0xB0, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService#getAvailableApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0xEC, symBinAddr: 0x2460, symSize: 0xDC }
-  - { offset: 0xB8, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#<init>(){}', symObjAddr: 0x1C8, symBinAddr: 0x253C, symSize: 0x228 }
-  - { offset: 0xE3, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#<init>(){}', symObjAddr: 0x1C8, symBinAddr: 0x253C, symSize: 0x228 }
-  - { offset: 0xEB, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS.<get-upiSchemes>#internal', symObjAddr: 0x3F0, symBinAddr: 0x2764, symSize: 0x78 }
-  - { offset: 0x117, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS.<get-upiSchemes>#internal', symObjAddr: 0x3F0, symBinAddr: 0x2764, symSize: 0x78 }
-  - { offset: 0x11F, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x468, symBinAddr: 0x27DC, symSize: 0x6F4 }
-  - { offset: 0x200, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x468, symBinAddr: 0x27DC, symSize: 0x6F4 }
-  - { offset: 0x208, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIAppDetector#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>-trampoline', symObjAddr: 0xB5C, symBinAddr: 0x2ED0, symSize: 0xE4 }
-  - { offset: 0x2F5, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIAppDetector#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>-trampoline', symObjAddr: 0xB5C, symBinAddr: 0x2ED0, symSize: 0xE4 }
-  - { offset: 0x2FD, size: 0x8, addend: 0x0, symName: '_kotlin2objc_kfun:kotlin.Any#equals(kotlin.Any?){}kotlin.Boolean', symObjAddr: 0xC40, symBinAddr: 0x2FB4, symSize: 0x114 }
-  - { offset: 0x317, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#<init>(){}', symObjAddr: 0x1108, symBinAddr: 0x347C, symSize: 0x128 }
-  - { offset: 0x31F, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x1230, symBinAddr: 0x35A4, symSize: 0x150 }
-  - { offset: 0x333, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x1230, symBinAddr: 0x35A4, symSize: 0x150 }
-  - { offset: 0x33B, size: 0x8, addend: 0x0, symName: '_objc2kotlin_virtual_kfun:com.boxpaybridge.shared.UPIAppDetector#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x1380, symBinAddr: 0x36F4, symSize: 0x150 }
-  - { offset: 0x34F, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.shared.UPIService#<init>(com.boxpaybridge.shared.UPIAppDetector){}', symObjAddr: 0x14D0, symBinAddr: 0x3844, symSize: 0x154 }
-  - { offset: 0x357, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.shared.UPIService#getAvailableApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x1624, symBinAddr: 0x3998, symSize: 0x150 }
-  - { offset: 0x36B, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.shared.UPIService#getAvailableApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x1624, symBinAddr: 0x3998, symSize: 0x150 }
-  - { offset: 0x373, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#equals(kotlin.Any?){}kotlin.Boolean', symObjAddr: 0x1774, symBinAddr: 0x3AE8, symSize: 0x15C }
-  - { offset: 0x387, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#equals(kotlin.Any?){}kotlin.Boolean', symObjAddr: 0x1774, symBinAddr: 0x3AE8, symSize: 0x15C }
-  - { offset: 0x38F, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#hashCode(){}kotlin.Int', symObjAddr: 0x18D0, symBinAddr: 0x3C44, symSize: 0x134 }
-  - { offset: 0x3A3, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#hashCode(){}kotlin.Int', symObjAddr: 0x18D0, symBinAddr: 0x3C44, symSize: 0x134 }
-  - { offset: 0x3AB, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#toString(){}kotlin.String', symObjAddr: 0x1A04, symBinAddr: 0x3D78, symSize: 0x150 }
-  - { offset: 0x3BF, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#toString(){}kotlin.String', symObjAddr: 0x1A04, symBinAddr: 0x3D78, symSize: 0x150 }
-  - { offset: 0x3C7, size: 0x8, addend: 0x0, symName: '_objc2kotlin_virtual_kfun:kotlin.Any#equals(kotlin.Any?){}kotlin.Boolean', symObjAddr: 0x1B54, symBinAddr: 0x3EC8, symSize: 0x15C }
+  - { offset: 0x3A, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService#<init>(com.boxpaybridge.shared.UPIAppDetector){}', symObjAddr: 0x0, symBinAddr: 0x2318, symSize: 0x74 }
+  - { offset: 0x42, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService.<get-detector>#internal', symObjAddr: 0x74, symBinAddr: 0x238C, symSize: 0x78 }
+  - { offset: 0x7D, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService.<get-detector>#internal', symObjAddr: 0x74, symBinAddr: 0x238C, symSize: 0x78 }
+  - { offset: 0x85, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService#getAvailableApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0xEC, symBinAddr: 0x2404, symSize: 0xDC }
+  - { offset: 0xB0, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService#getAvailableApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0xEC, symBinAddr: 0x2404, symSize: 0xDC }
+  - { offset: 0xB8, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#<init>(){}', symObjAddr: 0x1C8, symBinAddr: 0x24E0, symSize: 0x284 }
+  - { offset: 0xE3, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#<init>(){}', symObjAddr: 0x1C8, symBinAddr: 0x24E0, symSize: 0x284 }
+  - { offset: 0xEB, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS.<get-upiSchemes>#internal', symObjAddr: 0x44C, symBinAddr: 0x2764, symSize: 0x78 }
+  - { offset: 0x117, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS.<get-upiSchemes>#internal', symObjAddr: 0x44C, symBinAddr: 0x2764, symSize: 0x78 }
+  - { offset: 0x11F, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x4C4, symBinAddr: 0x27DC, symSize: 0x6F4 }
+  - { offset: 0x200, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x4C4, symBinAddr: 0x27DC, symSize: 0x6F4 }
+  - { offset: 0x208, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIAppDetector#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>-trampoline', symObjAddr: 0xBB8, symBinAddr: 0x2ED0, symSize: 0xE4 }
+  - { offset: 0x2F5, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIAppDetector#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>-trampoline', symObjAddr: 0xBB8, symBinAddr: 0x2ED0, symSize: 0xE4 }
+  - { offset: 0x2FD, size: 0x8, addend: 0x0, symName: '_kotlin2objc_kfun:kotlin.Any#equals(kotlin.Any?){}kotlin.Boolean', symObjAddr: 0xC9C, symBinAddr: 0x2FB4, symSize: 0x114 }
+  - { offset: 0x317, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#<init>(){}', symObjAddr: 0x1164, symBinAddr: 0x347C, symSize: 0x128 }
+  - { offset: 0x31F, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x128C, symBinAddr: 0x35A4, symSize: 0x150 }
+  - { offset: 0x333, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.ios.UPIAppDetectorIOS#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x128C, symBinAddr: 0x35A4, symSize: 0x150 }
+  - { offset: 0x33B, size: 0x8, addend: 0x0, symName: '_objc2kotlin_virtual_kfun:com.boxpaybridge.shared.UPIAppDetector#getInstalledUPIApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x13DC, symBinAddr: 0x36F4, symSize: 0x150 }
+  - { offset: 0x34F, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.shared.UPIService#<init>(com.boxpaybridge.shared.UPIAppDetector){}', symObjAddr: 0x152C, symBinAddr: 0x3844, symSize: 0x154 }
+  - { offset: 0x357, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.shared.UPIService#getAvailableApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x1680, symBinAddr: 0x3998, symSize: 0x150 }
+  - { offset: 0x36B, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:com.boxpaybridge.shared.UPIService#getAvailableApps(){}kotlin.collections.List<kotlin.String>', symObjAddr: 0x1680, symBinAddr: 0x3998, symSize: 0x150 }
+  - { offset: 0x373, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#equals(kotlin.Any?){}kotlin.Boolean', symObjAddr: 0x17D0, symBinAddr: 0x3AE8, symSize: 0x15C }
+  - { offset: 0x387, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#equals(kotlin.Any?){}kotlin.Boolean', symObjAddr: 0x17D0, symBinAddr: 0x3AE8, symSize: 0x15C }
+  - { offset: 0x38F, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#hashCode(){}kotlin.Int', symObjAddr: 0x192C, symBinAddr: 0x3C44, symSize: 0x134 }
+  - { offset: 0x3A3, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#hashCode(){}kotlin.Int', symObjAddr: 0x192C, symBinAddr: 0x3C44, symSize: 0x134 }
+  - { offset: 0x3AB, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#toString(){}kotlin.String', symObjAddr: 0x1A60, symBinAddr: 0x3D78, symSize: 0x150 }
+  - { offset: 0x3BF, size: 0x8, addend: 0x0, symName: '_objc2kotlin_kfun:kotlin.Any#toString(){}kotlin.String', symObjAddr: 0x1A60, symBinAddr: 0x3D78, symSize: 0x150 }
+  - { offset: 0x3C7, size: 0x8, addend: 0x0, symName: '_objc2kotlin_virtual_kfun:kotlin.Any#equals(kotlin.Any?){}kotlin.Boolean', symObjAddr: 0x1BB0, symBinAddr: 0x3EC8, symSize: 0x15C }
   - { offset: 0x419, size: 0x8, addend: 0x0, symName: '_kfun:interop.mutex_node.$init_global#internal', symObjAddr: 0x238, symBinAddr: 0xA7C8, symSize: 0xDC }
   - { offset: 0x421, size: 0x8, addend: 0x0, symName: '_kfun:interop.mutex_node.Companion#<init>(){}', symObjAddr: 0x314, symBinAddr: 0xA8A4, symSize: 0x64 }
   - { offset: 0x43B, size: 0x8, addend: 0x0, symName: '_kfun:interop.mutex_node.Companion#<init>(){}', symObjAddr: 0x314, symBinAddr: 0xA8A4, symSize: 0x64 }

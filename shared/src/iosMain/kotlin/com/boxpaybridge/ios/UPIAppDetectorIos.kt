@@ -8,6 +8,7 @@ class UPIAppDetectorIOS : UPIAppDetector {
     private val upiSchemes = mapOf(
         "gpay" to "gpay://",
         "phonepe" to "phonepe://",
+        "tez" to "tez://",
         "paytm" to "paytmmp://"
     )
 
