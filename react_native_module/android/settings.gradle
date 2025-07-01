@@ -1,3 +1,19 @@
+pluginManagement {
+  repositories {
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+  }
+}
+
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+  repositories {
+    google()
+    mavenCentral()
+  }
+}
+
 rootProject.name = 'react_native_module'
 include ':shared'
 project(':shared').projectDir = new File(rootDir, '../../shared')

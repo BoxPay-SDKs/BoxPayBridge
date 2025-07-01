@@ -1,5 +1,5 @@
 {
-  "name": "react_native_module",
+  "name": "react_native_boxpaybridge",
   "version": "0.1.0",
   "description": "a thin layered structure",
   "main": "lib/commonjs/index.js",

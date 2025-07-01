@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "14.0"
   s.source       = { :git => "https://github.com/Ishika1601-boxpay/react_native_module.git", :tag => "#{s.version}" }
 
-  s.vendored_frameworks = "ios/shared.xcframework"
-  s.source_files = "ios/**/*.{h,m,mm,swift}"
+  s.source_files     = 'ios/**/*.{h,m,mm}'
+  s.vendored_frameworks = 'ios/Framework/boxpaybridge.xcframework'
   s.private_header_files = "ios/**/*.h"
 
   s.requires_arc = true

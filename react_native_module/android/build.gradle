@@ -6,6 +6,9 @@ buildscript {
   repositories {
     google()
     mavenCentral()
+    maven {
+      url("https://oss.sonatype.org/content/repositories/snapshots")
+    }
   }
 
   dependencies {
@@ -48,8 +51,8 @@ android {
   }
 
   compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
+    sourceCompatibility JavaVersion.VERSION_17
+    targetCompatibility JavaVersion.VERSION_17
   }
 
   sourceSets {
@@ -65,12 +68,17 @@ android {
 repositories {
   mavenCentral()
   google()
+  // Needed for react-native dependencies
+  maven {
+    url("https://oss.sonatype.org/content/repositories/snapshots")
+  }
 }
 
 def kotlin_version = getExtOrDefault("kotlinVersion")
+def reactNativeVersion = "0.78.0"
 
 dependencies {
-  implementation "com.facebook.react:react-android"
+  implementation "com.facebook.react:react-android:$reactNativeVersion"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
   implementation(project(":shared"))
 }

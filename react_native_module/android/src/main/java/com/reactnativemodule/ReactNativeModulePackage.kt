@@ -9,8 +9,8 @@ import java.util.HashMap
 
 class ReactNativeModulePackage : BaseReactPackage() {
   override fun getModule(name: String, reactContext: ReactApplicationContext): NativeModule? {
-    return if (name == ReactNativeModuleModule.NAME) {
-      ReactNativeModuleModule(reactContext)
+    return if (name == BoxpayBridgeModule.NAME) {
+      BoxpayBridgeModule(reactContext)
     } else {
       null
     }
@@ -19,9 +19,9 @@ class ReactNativeModulePackage : BaseReactPackage() {
   override fun getReactModuleInfoProvider(): ReactModuleInfoProvider {
     return ReactModuleInfoProvider {
       val moduleInfos: MutableMap<String, ReactModuleInfo> = HashMap()
-      moduleInfos[ReactNativeModuleModule.NAME] = ReactModuleInfo(
-        ReactNativeModuleModule.NAME,
-        ReactNativeModuleModule.NAME,
+      moduleInfos[BoxpayBridgeModule.NAME] = ReactModuleInfo(
+        BoxpayBridgeModule.NAME,
+        BoxpayBridgeModule.NAME,
         false,  // canOverrideExistingModule
         false,  // needsEagerInit
         false,  // isCxxModule

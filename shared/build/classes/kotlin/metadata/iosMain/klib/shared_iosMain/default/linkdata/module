@@ -1,2 +1,2 @@
 
-<boxpaybridge:shared_iosMain>:com.boxpaybridge.ios
+$<react_native_module:shared_iosMain>:com.boxpaybridge.ios

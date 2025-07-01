@@ -80,6 +80,14 @@ android {
     }
 }
 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+
 // ✅ Publishing block
 
 afterEvaluate {
