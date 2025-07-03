@@ -1,4 +1,4 @@
-package com.boxpaybridge.sdk
+package com.crossplatform.sdk
 
 import com.crossplatform.sdk.UPIAppDetector
 
