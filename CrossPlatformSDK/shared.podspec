@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-    spec.name                     = 'shared'
+    spec.name                     = 'CrossPlatformSDK'
     spec.version                  = '1.0.0'
     spec.homepage                 = 'https://boxpay.com'
     spec.source                   = { :http=> ''}

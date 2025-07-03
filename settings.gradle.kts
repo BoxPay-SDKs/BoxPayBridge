@@ -31,8 +31,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "boxpaybridge"
 
-include(":shared")
-project(":shared").projectDir = file("shared")
+include(":CrossPlatformSDK")
+project(":CrossPlatformSDK").projectDir = file("CrossPlatformSDK")
 
 // ✅ Include the React Native module
 include(":react_native_module")
