@@ -68,7 +68,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.boxpaybridge.shared"
+    namespace = "com.crossplatform.sdk"
     compileSdk = 34
     defaultConfig {
         minSdk = 21
