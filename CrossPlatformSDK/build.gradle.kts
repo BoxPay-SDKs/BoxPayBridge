@@ -17,19 +17,19 @@ kotlin {
 
     iosX64 {
         binaries.framework {
-            baseName = "shared"
+            baseName = "CrossPlatformSDK"
             xcf.add(this)
         }
     }
     iosArm64 {
         binaries.framework {
-            baseName = "shared"
+            baseName = "CrossPlatformSDK"
             xcf.add(this)
         }
     }
     iosSimulatorArm64 {
         binaries.framework {
-            baseName = "shared"
+            baseName = "CrossPlatformSDK"
             xcf.add(this)
         }
     }
@@ -40,7 +40,7 @@ kotlin {
         homepage = "https://boxpay.com"
         ios.deploymentTarget = "14.1"
         framework {
-            baseName = "shared"
+            baseName = "CrossPlatformSDK"
             isStatic = true
         }
     }

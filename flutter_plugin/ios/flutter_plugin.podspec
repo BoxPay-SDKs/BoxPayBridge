@@ -16,7 +16,7 @@ A new Flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   s.platform = :ios, '12.0'
-  s.dependency 'BoxPayBridge', :path => '../../shared'
+  s.dependency 'BoxPayBridge', :path => '../../CrossPlatformSDK'
 
   # ✅ Point to your XCFramework location
   s.vendored_frameworks = 'Framework/boxpaybridge.xcframework'

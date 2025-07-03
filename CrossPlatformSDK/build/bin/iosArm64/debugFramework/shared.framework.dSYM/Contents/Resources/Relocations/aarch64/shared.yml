@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/shared/build/bin/iosArm64/debugFramework/shared.framework/shared'
+binary-path:     '/Users/ishikabansal/AndroidStudioProjects/BoxPayBridge/CrossPlatformSDK/build/bin/iosArm64/debugFramework/shared.framework/shared'
 relocations:
   - { offset: 0x3A, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService#<init>(com.boxpaybridge.shared.UPIAppDetector){}', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x74 }
   - { offset: 0x42, size: 0x8, addend: 0x0, symName: '_kfun:com.boxpaybridge.shared.UPIService.<get-detector>#internal', symObjAddr: 0x74, symBinAddr: 0x4074, symSize: 0x78 }

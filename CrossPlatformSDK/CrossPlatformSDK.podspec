@@ -6,18 +6,18 @@ Pod::Spec.new do |spec|
     spec.authors                  = ''
     spec.license                  = ''
     spec.summary                  = 'BoxPayBridge Shared SDK'
-    spec.vendored_frameworks      = 'build/cocoapods/framework/shared.framework'
+    spec.vendored_frameworks      = 'build/cocoapods/framework/CrossPlatformSDK.framework'
     spec.libraries                = 'c++'
     spec.ios.deployment_target    = '14.1'
                 
                 
-    if !Dir.exist?('build/cocoapods/framework/shared.framework') || Dir.empty?('build/cocoapods/framework/shared.framework')
+    if !Dir.exist?('build/cocoapods/framework/CrossPlatformSDK.framework') || Dir.empty?('build/cocoapods/framework/CrossPlatformSDK.framework')
         raise "
 
-        Kotlin framework 'shared' doesn't exist yet, so a proper Xcode project can't be generated.
+        Kotlin framework 'CrossPlatformSDK' doesn't exist yet, so a proper Xcode project can't be generated.
         'pod install' should be executed after running ':generateDummyFramework' Gradle task:
 
-            ./gradlew :shared:generateDummyFramework
+            ./gradlew :CrossPlatformSDK:generateDummyFramework
 
         Alternatively, proper pod installation is performed during Gradle sync in the IDE (if Podfile location is set)"
     end
@@ -27,13 +27,13 @@ Pod::Spec.new do |spec|
     }
                 
     spec.pod_target_xcconfig = {
-        'KOTLIN_PROJECT_PATH' => ':shared',
-        'PRODUCT_MODULE_NAME' => 'shared',
+        'KOTLIN_PROJECT_PATH' => ':CrossPlatformSDK',
+        'PRODUCT_MODULE_NAME' => 'CrossPlatformSDK',
     }
                 
     spec.script_phases = [
         {
-            :name => 'Build shared',
+            :name => 'Build CrossPlatformSDK',
             :execution_position => :before_compile,
             :shell_path => '/bin/sh',
             :script => <<-SCRIPT

@@ -41,7 +41,7 @@ android {
 
 dependencies {
 
-    implementation(project(":shared"))
+    implementation(project(":CrossPlatformSDK"))
 
     
     implementation(libs.androidx.core.ktx)

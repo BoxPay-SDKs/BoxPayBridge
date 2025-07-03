@@ -48,7 +48,7 @@ android {
     }
 
     dependencies {
-        implementation project(":shared")
+        implementation project(":CrossPlatformSDK")
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
     }
