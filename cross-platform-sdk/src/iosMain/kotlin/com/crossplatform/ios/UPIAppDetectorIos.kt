@@ -1,6 +1,6 @@
-package com.boxpaybridge.ios
+package com.crossplatform.ios
 
-import com.boxpaybridge.sdk.UPIAppDetector
+import com.crossplatform.sdk.UPIAppDetector
 import platform.Foundation.NSURL
 import platform.UIKit.UIApplication
 

@@ -29,7 +29,7 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "boxpaybridge"
+rootProject.name = "crossplatformsdk"
 
 include(":cross-platform-sdk")
 project(":cross-platform-sdk").projectDir = file("cross-platform-sdk")

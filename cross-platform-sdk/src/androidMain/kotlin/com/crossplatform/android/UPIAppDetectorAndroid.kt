@@ -1,8 +1,8 @@
-package com.boxpaybridge.android
+package com.crossplatform.android
 
 import android.content.Context
 import android.content.pm.PackageManager
-import com.boxpaybridge.sdk.UPIAppDetector
+import com.crossplatform.sdk.UPIAppDetector
 
 class UPIAppDetectorAndroid(
     private val context: Context
